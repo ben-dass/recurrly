@@ -2,5 +2,5 @@ import "@/global.css";
 import { Stack } from "expo-router";
 
 export default function App() {
-	return <Stack />;
+	return <Stack screenOptions={{ headerShown: false }} />;
 }

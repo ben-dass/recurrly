@@ -26,6 +26,22 @@ export default function Index() {
 			>
 				Go to Sign Up
 			</Link>
+
+			<Link
+				href="/subscriptions/spotify"
+				className="mt-4 rounded bg-priamry text-white bg-primary p-4"
+			>
+				Spotify Subscription
+			</Link>
+			<Link
+				href={{
+					pathname: "/subscriptions/[id]",
+					params: { id: "claude-max" },
+				}}
+				className="mt-4 rounded bg-priamry text-white bg-primary p-4"
+			>
+				Claude Max Subscription
+			</Link>
 		</View>
 	);
 }
