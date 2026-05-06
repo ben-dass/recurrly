@@ -3,6 +3,8 @@ import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
 
+SplashScreen.preventAutoHideAsync();
+
 export default function App() {
 	const [fontsLoaded] = useFonts({
 		"sans-bold": require("@/assets/fonts/PlusJakartaSans-Bold.ttf"),
